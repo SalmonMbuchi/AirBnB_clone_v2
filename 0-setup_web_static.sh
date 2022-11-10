@@ -10,13 +10,13 @@ echo "Holberton School" > /data/web_static/releases/test/index.html
 ln -sf /data/web_static/releases/test/ /data/web_static/current
 
 chown -R ubuntu:ubuntu /data/
-# chgrp -R ubuntu /data/
+chgrp -R ubuntu /data/
 
 printf %s "server {
     listen 80;
     listen [::]:80 default_server;
     add_header X-Served-By $HOSTNAME;
-    root   /etc/nginx/html;
+    root   /var/www/html;
     index  index.html index.htm;
 
     location /hbnb_static {
@@ -30,7 +30,7 @@ printf %s "server {
 
     error_page 404 /404.html;
     location /404 {
-        root /etc/nginx/html;
+        root /var/www/html;
         internal;
     }
 }" > /etc/nginx/sites-available/default
