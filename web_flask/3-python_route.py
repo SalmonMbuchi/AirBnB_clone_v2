@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# Redirection rules
 from flask import Flask
 from markupsafe import escape
 
