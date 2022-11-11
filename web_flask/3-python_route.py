@@ -28,4 +28,5 @@ def display_python(text='is cool'):
     return 'Python %s' % escape(text).replace('_', ' ')
 
 
-app.run(host='0.0.0.0', port=5000)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000)
