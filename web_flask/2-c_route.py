@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# use a variable
+"""replace underscore"""
 from flask import Flask
 from markupsafe import escape
 

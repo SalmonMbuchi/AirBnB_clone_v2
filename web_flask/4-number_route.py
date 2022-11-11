@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Variable rules
+"""Variable rules"""
 from flask import Flask
 from markupsafe import escape
 
