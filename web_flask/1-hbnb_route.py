@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# display different messages
+"""display different messages"""
 from flask import Flask
 
 app = Flask(__name__)
