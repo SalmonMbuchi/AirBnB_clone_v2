@@ -23,7 +23,7 @@ def states_id(id):
 
 
 @app.teardown_appcontext
-def teardown():
+def teardown(exc):
     storage.close()
 
 
